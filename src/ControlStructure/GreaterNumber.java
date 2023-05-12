@@ -11,9 +11,9 @@ public class GreaterNumber {
             System.out.println("a greater");
             System.out.println("a=" + a);
         }
-        else
-        {
+        else {
             System.out.println("b greater");
         }
+
     }
 }
