@@ -1,6 +1,6 @@
 package StringsDemo;
 
-public class SplitDemo4 {
+public class SplitDemoWithEndswith {
 
     public static void main(String[] args) {
 
@@ -12,9 +12,8 @@ public class SplitDemo4 {
         for (int i=0;i< stArr.length ;i++)
         {
             String currentString = stArr[i];
-            int l = currentString.length();
 
-            if (currentString.charAt(l-1)=='y')
+            if (currentString.endsWith("y"))
                 System.out.println(stArr[i]);
         }
 
