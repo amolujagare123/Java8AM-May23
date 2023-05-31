@@ -28,5 +28,24 @@ class Programmer extends Employee {
         System.out.println("programmerWork");
     }
 
+    /*public static void main(String[] args) {
+        Employee e = new Employee();
+        System.out.println(e.salary);
+        e.empWork();
 
+        Programmer p = new Programmer();
+        System.out.println(p.bonus);
+        p.programmerWork();
+        System.out.println(p.salary);
+        p.empWork();
+
+    }*/
+
+    void testAnimal()
+    {
+        Animal a = new Animal();
+        a.eat();
+
+
+    }
 }

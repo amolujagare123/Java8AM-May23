@@ -5,7 +5,7 @@ public class Java1 {
     public int a;
     private  double d;
     public char c;
-    String str;
+    protected String str;
 
     void display()
     {
