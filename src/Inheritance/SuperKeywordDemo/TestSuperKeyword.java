@@ -39,7 +39,7 @@ class Programmer extends Employee {
         numberOfAllowedHolidays = 10;*/
         System.out.println("inside programmer constructor");
     }
-    void display()
+    void display() // overridden
     {
         System.out.println("Programmer Display");
     }
@@ -59,6 +59,10 @@ public class TestSuperKeyword {
         Programmer p = new Programmer();
 
       //  p.programmerWork();
+        //p.display();
+
+        Employee emp = new Programmer();
+        emp.display();
 
 
 
