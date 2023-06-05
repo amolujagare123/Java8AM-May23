@@ -21,7 +21,12 @@ public class Employee {
     }
 }
 
-class Programmer extends Employee {
+class Demo
+{
+
+}
+
+class Programmer extends Employee/*,Demo */{
     int bonus = 8000;
     void programmerWork()
     {
