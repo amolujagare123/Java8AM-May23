@@ -1,5 +1,7 @@
 package Methods;
 
+import ClassesNConstructors.ClassDemo;
+
 public class MethodReturningValues {
 
     int calc()
@@ -41,6 +43,37 @@ public class MethodReturningValues {
         return result;
     }
 
+
+    int[] getMyArray()
+    {
+        int[] a = {12,23,34,45,46,57,68};
+
+        return a;
+    }
+
+    String[][] getTwoDArray()
+    {
+        String[][] stArr = {
+                {"Priya","Radhey","Ravi"},
+                {"Saba","Satish","Shashi"},
+                {"Sundarmala","Venkat","Amol"},
+                {"Rohit","Rahul","Vaibhav"},
+                {"Vaishali","Sneha","Pranali"}
+        };
+
+        return stArr;
+    }
+
+    ClassDemo getMyClassObject()
+    {
+        ClassDemo classDemo = new ClassDemo();
+        classDemo.a = 10;
+        classDemo.d = 10.10;
+        classDemo.c = 'a';
+        classDemo.str = "aaaa";
+        return  classDemo;
+    }
+
     void sample()
     {
 
@@ -63,5 +96,26 @@ public class MethodReturningValues {
 
         String newString = ob.printSecondHalfOfTheString("My Name is Amol");
         System.out.println("newString="+newString);
+
+
+        int[] arr = ob.getMyArray();
+        for (int i=0;i<arr.length;i++)
+            System.out.println(arr[i]);
+
+
+        String[][] st = ob.getTwoDArray();
+
+        for (int i=0;i<st.length;i++)
+        {
+            for (int j=0;j<st[0].length;j++)
+            {
+                System.out.print(st[i][j]+"\t");
+            }
+            System.out.println();
+        }
+
+
+        ClassDemo cd = ob.getMyClassObject();
+        cd.display();
     }
 }
