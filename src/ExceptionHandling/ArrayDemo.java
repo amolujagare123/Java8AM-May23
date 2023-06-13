@@ -13,9 +13,29 @@ public class ArrayDemo {
             a[4] = 34;
             a[5] = 78;
         }
+        catch (ArithmeticException e)
+        {
+            System.out.println("inside catch ArithmeticException");
+            System.out.println(e);
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+        catch (RuntimeException e)
+        {
+            System.out.println("inside catch RuntimeException");
+            System.out.println(e);
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
         catch (Exception e)
         {
-            System.out.println("inside catch");
+            System.out.println("inside catch Exception");
+            System.out.println(e);
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
         System.out.println("length="+a.length);

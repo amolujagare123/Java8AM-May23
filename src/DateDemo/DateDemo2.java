@@ -1,5 +1,6 @@
 package DateDemo;
 
+import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -9,7 +10,7 @@ public class DateDemo2 {
     public static void main(String[] args) throws ParseException {
 
         String dateStr = "26/09/2013";
-        SimpleDateFormat sd = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat sd = new SimpleDateFormat("dd/MM-yyyy");
         Date date = sd.parse(dateStr);
 
         System.out.println("dateStr="+dateStr);

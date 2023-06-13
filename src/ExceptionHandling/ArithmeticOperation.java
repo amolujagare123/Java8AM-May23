@@ -11,9 +11,26 @@ public class ArithmeticOperation {
         try {
             c = a / b;
         }
+        catch (ArithmeticException e)
+        {
+            System.out.println("inside catch ArithmeticException");
+            System.out.println(e);
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
+
+        catch (RuntimeException e)
+        {
+            System.out.println("inside catch RuntimeException");
+            System.out.println(e);
+            System.out.println(e.getClass());
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+        }
         catch (Exception e)
         {
-            System.out.println("inside catch");
+            System.out.println("inside catch Exception");
             System.out.println(e);
             System.out.println(e.getClass());
             System.out.println(e.getMessage());
